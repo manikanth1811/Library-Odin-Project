@@ -1,0 +1,104 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+    padding: 0;
+    margin: 0;
+}
+
+.library{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+
+nav > h1{
+    text-align: center;
+    margin: 0;
+    font-weight: 900;
+}
+
+nav{
+    background-color: rgb(223, 130, 15);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.books-container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+.book{
+    border: 1px black solid;
+    height: 250px;
+    width: 250px;
+    display: grid;
+    grid-template-columns: 125px 125px;
+    grid-template-areas: 
+    "bookname bookname"
+    "author author"
+    "pages pages"
+    "read remove"
+    ". .";
+    justify-items: center;
+    row-gap: 0.25rem;
+    box-shadow: grey 5px 2px;
+}
+
+
+p.name{
+    grid-area: bookname;
+}
+
+p.author{
+    grid-area: author;
+}
+
+p.pages{
+    grid-area: pages;
+}
+
+button.read-status{
+    grid-area: read;
+}
+
+button.remove{
+    grid-area: remove;
+}
+
+button.edit{
+    grid-area: edit;
+}
+
+.add-book{
+    border-radius: 20%;
+    width: 100px;
+    height: 50px;
+    box-shadow: grey 2px 2px;
+}
+
+.read-book{
+    background-color: lightgreen;
+}
+
+.unread-book{
+    background-color: rgb(248, 130, 130);
+}
+
+input,form > label,form > select{
+    display: block;
+    margin: 10px;
+}
+
+.add-book-form{
+    padding-top: 20px;
+    display: none;
+    justify-content: center;
+}

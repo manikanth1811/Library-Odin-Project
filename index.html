@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+    
+</head>
+<body>
+    <div class="library">
+        <nav class="header">
+            <h1>Library</h1>
+        </nav>
+        <div class="books-container">
+        </div>
+        <button class="add-book">Add Book</button>
+    </div>
+    <div class="add-book-form">
+        <form>
+            <label for="book-name">Book Name:</label>
+            <input type="text" name="book-name" id="book-name" required>
+            <label for="book-author">Book Author: </label>
+            <input type="text" name="book-author" id="book-author" required>
+            <label for="book-pages">Book Pages: </label>
+            <input type="number" name="book-pages" id="book-pages" required>
+            <label for="book-read-status">Book read Status</label>
+            <select name="book-read-status" id="book-read-status" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <button type="submit" id="formSubmit">Add to Lib</button>
+            <button value="cancel">Cancel</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
